@@ -2,13 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Apple Homepage Clone</title>
+<title>Apple</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/png" href="apple-logo.png">
 <style>
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -16,15 +14,12 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
 }
-
-/* ===== NAVBAR ===== */
 .navbar {
   width: 100%;
   height: 44px;
   background: #fff;
   border-bottom: 1px solid #ddd;
 }
-
 .navbar ul {
   max-width: 1100px;
   margin: auto;
@@ -35,39 +30,31 @@
   justify-content: space-between;
   font-size: 14px;
 }
-
 .navbar a {
   text-decoration: none;
   color: #000;
   opacity: 0.85;
 }
-
 .navbar i {
   font-size: 16px;
 }
-
-/* ===== HERO SECTION ===== */
 .hero {
   background: #f5f5f7;
   text-align: center;
   padding: 70px 20px 0;
 }
-
 .hero h1 {
   font-size: 56px;
   font-weight: 600;
 }
-
 .hero p {
   font-size: 26px;
   color: #555;
   margin: 15px 0 25px;
 }
-
 .hero-buttons {
   margin-bottom: 40px;
 }
-
 .btn-primary {
   background: #0071e3;
   color: #fff;
@@ -77,7 +64,6 @@
   font-size: 17px;
   margin-right: 15px;
 }
-
 .btn-outline {
   color: #0071e3;
   border: 2px solid #0071e3;
@@ -86,98 +72,632 @@
   text-decoration: none;
   font-size: 17px;
 }
-
 .hero-image {
   display: flex;
   justify-content: center;
 }
-
 .hero-image img {
   width: 1000px;
   max-width: 100%;
+  height: auto;
 }
-
-/* ===== AIRPODS SECTION ===== */
 .airpods {
   background: #f5f5f7;
   text-align: center;
   padding: 100px 20px 80px;
 }
-
 .airpods h1 {
   font-size: 56px;
 }
-
 .airpods p {
   font-size: 26px;
   color: #555;
   margin: 15px 0 28px;
 }
-
 .airpods-buttons {
   margin-bottom: 60px;
 }
-
 .airpods-image {
   display: flex;
   justify-content: center;
 }
-
 .airpods-image img {
   width: 900px;
   max-width: 90vw;
+  height: auto;
 }
-
-/* ===== WATCH SECTION ===== */
 .watch {
   background: #f5f5f7;
-  padding: 100px 20px 80px;
+  padding: 0px 20px 80px;
   text-align: center;
 }
-
 .watch-content h1 {
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 12px;
 }
-
 .watch-content h1 i {
   margin-right: 6px;
 }
-
 .watch-content p {
   font-size: 24px;
   color: #555;
   margin-bottom: 28px;
 }
-
 .watch-buttons {
   margin-bottom: 60px;
 }
-
-/* Watch Images + Video */
 .watch-images {
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
 }
-
 .watch-images img,
 .watch-images video {
   width: 170px;
   border-radius: 22px;
   object-fit: cover;
 }
+.split {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+.split-card {
+  flex: 1 1 45%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  border-radius: 10px;
+}
+.split-content {
+  margin-bottom: 75px;
+}
+.split-image {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+.split-image img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+.split-content h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.split-content p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;   
+}
+.split-buttons a {
+  margin-right: 15px;  
+  margin-top: 10px;    
+  display: inline-block;
+}
+.split-content h1 span {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.ipad-air {
+  background: linear-gradient(#bfe7f6, #ffffff);
+}
+.mac-air {
+  background: linear-gradient(#dff0fb, #ffffff);
+}
+.mac-air .split-image {
+  margin-top: 80px;
+}
+.split-section .split-card {
+  flex: 1 1 45%;           
+  padding: 40px 20px;      
+  border-radius: 10px;     
+  text-align: center;
+  background: #fff;
+}
+.split-section .split-card h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.split-section 
+.split-card p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;   
+}
+.split-section .split-card img {
+  width: 80%;              
+  max-width: 500px;
+  height: auto;
+  margin-top: auto;
+}
+.split-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 80px auto;
+  flex-wrap: wrap;
+}
+.split-section img {
+  border-radius: 10px;
+}
+.split-section .split-card img {
+  margin-top: 30px; 
+}
+.cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #fff;
+  flex: 1 1 45%;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.card h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.card p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.card img {
+  width: 300px;
+  max-width: 80%;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 5px;
+  transition: 0.3s;
+}
+.btn-primary {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #0071e3;
+  border: 2px solid #0071e3;
+}
+.btn-primary:hover {
+  background-color: #005bb5;
+}
+.btn-outline:hover {
+  background-color: #0071e3;
+  color: #fff;
+}
+.card img {
+  margin-top: 0px;   
+}
+.card p {
+  margin-bottom: 0px;  
+}
+.cards-section .card:first-child img {
+  width: 420px;     
+  max-width: 95%;   
+  margin-top: 5px;
+}
+.cards-section .card:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.cards-section .card:first-child img {
+  margin-top: 20px;
+  transform: none; 
+}
+.cards-section .card:first-child img {
+  margin-top: 10px;
+}
+.cards-section .card:first-child {
+  padding-bottom: 10px;
+}
+.cards-section .card:first-child img {
+  margin-top: 8px;
+}
+.cards-section .card:first-child .btn {
+  margin-bottom: 8px;
+}
+.tv-section {
+  padding: 80px 0;
+  background: #f5f5f7;
+  text-align: center;
+}
+.tv-section h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.tv-slider {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tv-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.tv-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tv-card.small {
+  width: 260px;
+  height: 380px;
+  opacity: 0.8;
+}
+.tv-card.large {
+  width: 640px;
+  height: 380px;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+.overlay.center {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+.overlay h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.overlay p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+button.ghost {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+}
+.more-apple {
+  background: #000;
+  padding: 80px 0 100px;
+  text-align: center;
+}
+.more-apple h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.more-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+}
+.more-card {
+  width: 280px;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: 0.4s ease;
+}
+.more-card.active {
+  width: 620px;
+  height: 380px;
+  opacity: 1;
+  transform: scale(1);
+}
+.more-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.apple-footer {
+  background: #1d1d1f;
+  color: #a1a1a6;
+  font-size: 15px;
+  padding: 40px 20px 20px;
+}
+.apple-footer a {
+  color: #a1a1a6;
+  text-decoration: none;
+}
+.apple-footer a:hover {
+  text-decoration: underline;
+}
+.footer-legal {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+.footer-legal p {
+  line-height: 1.6;
+}
+.footer-links {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.footer-col h4 {
+  color: #f5f5f7;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 15px 0 10px;
+}
+.footer-col a {
+  display: block;
+  margin-bottom: 8px;
+}
+.footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+.footer-bottom p {
+  margin-bottom: 15px;
+}
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.footer-bottom-links a {
+  margin: 0 8px;
+}
+.more-apple {
+  background-color: #000;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.more-apple .more-card,
+.more-apple video {
+  background-color: #000;
+}
+.apple-footer {
+  background-color: #1d1d1f;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.apple-footer * {
+  background-color: transparent;
+}
+.apple-logo i {
+  font-size: 18px;     
+  line-height: 1;
+}
+.navbar ul {
+  justify-content: space-evenly; 
+}
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+.navbar a:hover {
+  opacity: 1;
+}
+.apple-logo i {
+  font-size: 18px;
+  line-height: 1;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.logo i {
+  font-size: 22px;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+}
+@media (max-width: 900px) {
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+.footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .split-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+
+  .hero h1,
+  .airpods h1 {
+    font-size: 44px;
+  }
+  .hero p,
+  .airpods p {
+    font-size: 22px;
+  }
+  .watch-content h1 {
+    font-size: 34px;
+  }
+  .tv-card.large {
+    width: 520px;
+  }
+  .tv-card.small {
+    width: 220px;
+    height: 330px;
+  }
+  .split {
+    gap: 30px;
+  }
+  .split-card {
+    flex: 1 1 100%;
+  }
+  .cards-section {
+    gap: 30px;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar ul {
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  .navbar li:not(.apple-logo):not(:last-child):not(:nth-last-child(2)) {
+    display: none; /* Apple-style minimal navbar */
+  }
+  .hero h1 {
+    font-size: 36px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  .hero-buttons a {
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+  }
+  .airpods h1 {
+    font-size: 36px;
+  }
+  .airpods p {
+    font-size: 18px;
+  }
+  .watch-images {
+    gap: 20px;
+  }
+  .watch-images img,
+  .watch-images video {
+    width: 140px;
+  }
+  .split,
+  .split-section,
+  .cards-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .split-card,
+  .card {
+    width: 100%;
+  }
+  .tv-slider {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .tv-card.large {
+    width: 90%;
+    height: 320px;
+  }
+  .tv-card.small {
+    width: 90%;
+    height: 300px;
+    opacity: 1;
+  }
+  .overlay h2 {
+    font-size: 34px;
+  }
+  .more-slider {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .more-card,
+  .more-card.active {
+    width: 90%;
+    height: 300px;
+    transform: none;
+  }
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .hero h1,
+  .airpods h1 {
+    font-size: 30px;
+  }
+  .overlay h2 {
+    font-size: 28px;
+  }
+  button {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+}
 </style>
 </head>
-
 <body>
-
-<!-- ===== NAVBAR ===== -->
 <nav class="navbar">
   <ul>
-    <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+    <li class="apple-logo">
+      <a href="#"><i class="fa-brands fa-apple"></i></a>
+    </li>
     <li><a href="#">Store</a></li>
     <li><a href="#">Mac</a></li>
     <li><a href="#">iPad</a></li>
@@ -193,67 +713,264 @@
     <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
   </ul>
 </nav>
-
-<!-- ===== HERO ===== -->
 <section class="hero">
   <h1>iPhone</h1>
   <p>Say hello to the latest generation of iPhone.</p>
-
   <div class="hero-buttons">
     <a href="#" class="btn-primary">Learn more</a>
     <a href="#" class="btn-outline">Shop iPhone</a>
   </div>
-
   <div class="hero-image">
     <img src="image4.jpg" alt="iPhone">
   </div>
 </section>
-
-<!-- ===== AIRPODS ===== -->
 <section class="airpods">
   <h1>AirPods Pro 3</h1>
   <p>The world’s best in-ear Active Noise Cancellation.</p>
-
   <div class="airpods-buttons">
     <a href="#" class="btn-primary">Learn more</a>
     <a href="#" class="btn-outline">Buy</a>
   </div>
-
   <div class="airpods-image">
     <img src="image3.jpg" alt="AirPods">
   </div>
 </section>
-
-<!-- ===== WATCH ===== -->
 <section class="watch">
   <div class="watch-content">
     <h1><i class="fa-brands fa-apple"></i> WATCH <span>Series 11</span></h1>
-
-    <p>
-      Turn resolutions into routines.<br>
-      Quit quitting your fitness goals.
-    </p>
-
+    <p>Turn resolutions into routines.<br>Quit quitting your fitness goals.</p>
     <div class="watch-buttons">
       <a href="#" class="btn-primary">Learn more</a>
       <a href="#" class="btn-outline">Buy</a>
     </div>
   </div>
-
   <div class="watch-images">
-    <img src="image1.jpg">
-    <img src="image2.png">
+    <img src="image1.png" alt="">
+    <img src="image2.png" alt="">
+    <img src="image5.png" alt="">
+    <video src="video.mp4" autoplay muted loop playsinline></video>
+    <img src="image6.png" alt="">
+    <img src="image7.png" alt="">
+    <img src="image8.png" alt="">
+  </div>
+</section>
+<section class="split">
+<div class="split-card ipad-air">
+  <div class="split-content">
+    <h1>iPad <span>air</span></h1>
+    <p>Now supercharged by the M3 chip.</p>
+    <div class="split-buttons">
+      <a href="#" class="btn-primary">Learn more</a>
+      <a href="#" class="btn-outline">Buy</a>
+    </div>
+  </div>
+  <div class="split-image">
+    <img src="image9.png" alt="iPad Air">
+  </div>
+</div>
+<div class="split-card mac-air">
+  <div class="split-content">
+    <h1>MacBook Air</h1>
+    <p>Sky blue color.<br>Sky high performance with M4.</p>
+    <div class="split-buttons">
+      <a href="#" class="btn-primary">Learn more</a>
+      <a href="#" class="btn-outline">Buy</a>
+    </div>
+  </div>
+  <div class="split-image">
+    <img src="https://www.apple.com/v/macbook-air/x/images/overview/hero/hero_static__c9sislzzicq6_large.png" alt="MacBook Air">
+  </div>
+</div>
 
-    <!-- VIDEO -->
-    <video src="video.mp4"
-           autoplay muted loop playsinline></video>
+</section>
 
-    <img src="watch4.png">
-    <img src="watch5.png">
-    <img src="watch6.png">
-    <img src="watch7.png">
+<section class="split-section">
+<div class="split-card">
+    <h1>iPad</h1>
+    <p>Now with the speed of the A16 chip<br>and double the starting storage.</p>
+    <div class="split-buttons">
+      <a href="#" class="btn-primary">Learn more</a>
+      <a href="#" class="btn-outline">Buy</a>
+    </div>
+    <img src="https://www.apple.com/mideast/ipad-11/b/images/overview/hero/en/no-facetime/hero__ecv967jz1y82_large.jpg" alt="iPad">
+  </div>
+  <div class="split-card">
+    <h1>HomePod mini</h1>
+    <div class="split-buttons">
+      <a href="#" class="btn-primary">Learn more</a>
+      <a href="#" class="btn-outline">Buy</a>
+    </div>
+    <img src="image10.png" alt="HomePod mini">
+  </div>
+  <section class="cards-section">
+  <div class="card">
+    <h1>Apple Trade In</h1>
+    <p>Get up to $180–$670 in credit when you trade in iPhone 13 or higher.</p>
+    <a href="#" class="btn btn-primary">Get your estimate</a>
+    <img src="image11.png" alt="Trade In iPhone"> <!-- Replace with your image -->
+  </div>
+  <div class="card">
+    <h1>Apple Card</h1>
+    <p>Get up to 3% Daily Cash back with every purchase.</p>
+    <a href="#" class="btn btn-primary">Learn more</a>
+    <a href="#" class="btn btn-outline">Apply now</a>
+    <img src="image12.png" alt="Apple Card"> <!-- Replace with your image -->
+  </div>
+</section>
+<section class="tv-section">
+  <h1>Endless entertainment.</h1>
+
+  <div class="tv-slider">
+    <div class="tv-card small">
+      <img src="image14.jpg" alt="">
+      <div class="overlay">
+        <span class="logo">
+          <i class="fa-brands fa-apple"></i>tv
+        </span>
+      </div>
+    </div>
+    <div class="tv-card large">
+      <img src="image13.jpg" alt="">
+      <div class="overlay center">
+        <span class="logo">
+          <i class="fa-brands fa-apple"></i>tv
+        </span>
+        <h2>PLURIBUS</h2>
+        <p>Drama · Happiness is a state of mind.</p>
+        <button>Stream now</button>
+      </div>
+    </div>
+    <div class="tv-card small">
+      <img src="image15.png" alt="">
+      <div class="overlay">
+        <button class="ghost">Stream now</button>
+      </div>
+    </div>
   </div>
 </section>
 
+<section class="more-apple">
+  <h2>More from Apple.</h2>
+
+  <div class="more-slider">
+    <div class="more-card">
+      <video src="video3.mp4" muted loop playsinline controls></video>
+    </div>
+    <div class="more-card active">
+      <video src="video2.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <div class="more-card">
+      <video src="video4.mp4" muted loop playsinline controls></video>
+    </div>
+  </div>
+</section>
+<footer class="apple-footer">
+
+  <div class="footer-legal">
+    <p>
+      Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device.
+      Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in
+      for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase
+      or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching
+      the description provided when estimate was made. Sales tax may be assessed on full value of a new
+      device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require
+      saving this information). Offer may not be available in all stores and may vary between in-store and
+      online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve
+      the right to refuse, cancel, or limit quantity of any trade-in transaction for any reason. More details
+      are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions
+      and limitations may apply.
+    </p>
+  </div>
+  <div class="footer-links">
+
+    <div class="footer-col">
+      <h4>Shop and Learn</h4>
+      <a href="#">Store</a>
+      <a href="#">Mac</a>
+      <a href="#">iPad</a>
+      <a href="#">iPhone</a>
+      <a href="#">Watch</a>
+      <a href="#">Vision</a>
+      <a href="#">AirPods</a>
+      <a href="#">TV & Home</a>
+      <a href="#">Accessories</a>
+      <a href="#">Gift Cards</a>
+    </div>
+  <div class="footer-col">
+      <h4>Account</h4>
+      <a href="#">Manage Your Apple Account</a>
+      <a href="#">Apple Store Account</a>
+      <a href="#">iCloud.com</a>
+    <h4>Entertainment</h4>
+      <a href="#">Apple TV+</a>
+      <a href="#">Apple Music</a>
+      <a href="#">Apple Arcade</a>
+      <a href="#">Apple Fitness+</a>
+      <a href="#">Apple Podcasts</a>
+      <a href="#">Apple Books</a>
+      <a href="#">App Store</a>
+    </div>
+    <div class="footer-col">
+      <h4>Apple Store</h4>
+      <a href="#">Find a Store</a>
+      <a href="#">Genius Bar</a>
+      <a href="#">Today at Apple</a>
+      <a href="#">Group Reservations</a>
+      <a href="#">Apple Camp</a>
+      <a href="#">Certified Refurbished</a>
+      <a href="#">Apple Trade In</a>
+      <a href="#">Financing</a>
+      <a href="#">Order Status</a>
+      <a href="#">Shopping Help</a>
+    </div>
+    <div class="footer-col">
+      <h4>For Business</h4>
+      <a href="#">Apple and Business</a>
+      <a href="#">Shop for Business</a>
+      <h4>For Education</h4>
+      <a href="#">Apple and Education</a>
+      <a href="#">Shop for K-12</a>
+      <a href="#">Shop for College</a>
+      <h4>For Healthcare</h4>
+      <a href="#">Apple in Healthcare</a>
+    </div>
+    <div class="footer-col">
+      <h4>Apple Values</h4>
+      <a href="#">Accessibility</a>
+      <a href="#">Education</a>
+      <a href="#">Environment</a>
+      <a href="#">Inclusion and Diversity</a>
+      <a href="#">Privacy</a>
+      <a href="#">Racial Equity and Justice</a>
+      <a href="#">Supply Chain Innovation</a>
+      <h4>About Apple</h4>
+      <a href="#">Newsroom</a>
+      <a href="#">Apple Leadership</a>
+      <a href="#">Career Opportunities</a>
+      <a href="#">Investors</a>
+      <a href="#">Ethics & Compliance</a>
+      <a href="#">Events</a>
+      <a href="#">Contact Apple</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you.
+      Or call <a href="#">1-800-MY-APPLE</a>.
+    </p>
+    <div class="footer-bottom-row">
+      <span>Copyright © 2025 Apple Inc. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sales and Refunds</a>
+        <a href="#">Legal</a>
+        <a href="#">Site Map</a>
+      </div>
+      <span>United States</span>
+    </div>
+  </div>
+</footer>
+</section>
 </body>
 </html>
