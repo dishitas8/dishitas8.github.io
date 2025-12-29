@@ -1,433 +1,260 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Apple Full Homepage Clone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    body {
-      background: #fff;
-      color: #1d1d1f;
-    }
-
-    header {
-      background: #000;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 28px;
-      color: #f5f5f7;
-      font-size: 14px;
-    }
-
-    .nav span {
-      cursor: pointer;
-      opacity: 0.9;
-    }
-
-    .nav span:hover {
-      opacity: 1;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: #fbfbfd;
-    }
-
-    .hero.dark {
-      background: #000;
-      color: #fff;
-    }
-
-    .hero h1 {
-      font-size: 56px;
-      font-weight: 600;
-    }
-
-    .hero h2 {
-      font-size: 28px;
-      font-weight: 400;
-      margin-top: 10px;
-    }
-
-    .hero p {
-      margin-top: 15px;
-      font-size: 18px;
-      color: #6e6e73;
-    }
-
-    .hero.dark p {
-      color: #b5b5b7;
-    }
-
-    .links {
-      margin-top: 25px;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: #0066cc;
-      font-size: 18px;
-      margin: 0 15px;
-    }
-
-    .hero img {
-      width: 70%;
-      max-width: 650px;
-      margin-top: 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .card {
-      background: #fbfbfd;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .card.dark {
-      background: #000;
-      color: #fff;
-    }
-
-    .card h3 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #6e6e73;
-      font-size: 18px;
-    }
-
-    .card.dark p {
-      color: #b5b5b7;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 15px;
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    footer {
-      background: #f5f5f7;
-      padding: 40px 20px;
-      font-size: 14px;
-      color: #6e6e73;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 40px;
-      }
-      .hero h2 {
-        font-size: 22px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <div class="nav">
-    <a href="#">Apple</a>
-    <a href="#">Store</a>
-    <a href="#"></a>
-    <span>iPad</span>
-    <span>iPhone</span>
-    <span>Watch</span>
-    <span>AirPods</span>
-    <span>Support</span>
-  </div>
-</header>
-
-<section class="hero dark">
-  <h1>iPhone 17 Pro</h1>
-  <h2>Ultimate power. Ultimate Pro.</h2>
-  <p>From ₹149900*</p>
-  <div class="links">
-    <a href="#">Learn more ></a>
-    <a href="#">Buy ></a>
-  </div>
-  <img src="highlights_design_endframe__flnga0hibmeu_large.jpg" alt="iPhone 17 Pro">
-</section>
-
-<section class="hero">
-  <h1>iPhone 17</h1>
-  <h2>Next-gen performance. Everyday perfection.</h2>
-  <p>From ₹89900*</p>
-  <div class="links">
-    <a href="#">Learn more ></a>
-    <a href="#">Buy ></a>
-  </div>
-  <img src="https://www.apple.com/newsroom/images/2025/09/apple-debuts-iphone-17/article/Apple-iPhone-17-color-lineup-250909_big.jpg.large.jpg" alt="iPhone 17">
-</section>
-
-<section class="hero">
-  <h1>iPhone Air</h1>
-  <h2>Thin. Light. Powerful.</h2>
-  <p>From ₹99900*</p>
-  <div class="links">
-    <a href="#">Learn more ></a>
-    <a href="#">Buy ></a>
-  </div>
-  <img src="https://www.apple.com/newsroom/images/2025/09/introducing-iphone-air-a-powerful-new-iphone-with-a-breakthrough-design/article/Apple-iPhone-Air-color-lineup-250909_big.jpg.large.jpg" alt="iPhone Air">
-</section>
-
-<section class="hero dark">
-  <h1>iPhone 16</h1>
-  <h2>Smarter. Faster. Better.</h2>
-  <p>From ₹79900*</p>
-  <div class="links">
-    <a href="#">Learn more ></a>
-    <a href="#">Buy ></a>
-  </div>
-  <img src="" alt="iPhone 16">
-</section>
-
-<section class="hero">
-  <h1>MacBook Air</h1>
-  <h2>Lean. Mean. M3 machine.</h2>
-  <p>From ₹114900*</p>
-  <div class="links">
-    <a href="#">Learn more ></a>
-    <a href="#">Buy ></a>
-  </div>
-  <img src="macbook-air.jpg" alt="MacBook Air">
-</section>
-
-<section class="grid">
-  <div class="card">
-    <h3>iPad</h3>
-    <p>Lovable. Drawable. Magical.</p>
-    <a href="#">Learn more ></a>
-  </div>
-
-  <div class="card dark">
-    <h3>Apple Watch</h3>
-    <p>A healthy leap ahead.</p>
-    <a href="#">Learn more ></a>
-  </div>
-
-  <div class="card">
-    <h3>AirPods Pro</h3>
-    <p>Adaptive Audio.</p>
-    <a href="#">Learn more ></a>
-  </div>
-
-  <div class="card dark">
-    <h3>Apple TV+</h3>
-    <p>Watch original shows.</p>
-    <a href="#">Learn more ></a>
-  </div>
-</section>
-
-<footer>
-  © 2025 Apple Inc. All rights reserved.
-</footer>
-
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Apple Clone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Apple Homepage Clone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    /* ===== GLOBAL RESET ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-    }
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    body {
-      background: #ffffff;
-      color: #1d1d1f;
-    }
+<style>
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+}
 
-    /* ===== NAVBAR ===== */
-    header {
-      position: sticky;
-      top: 0;
-      background: #000;
-      z-index: 1000;
-    }
+/* ===== NAVBAR ===== */
+.navbar {
+  width: 100%;
+  height: 44px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
 
-    nav {
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 20px;
-    }
+.navbar ul {
+  max-width: 1100px;
+  margin: auto;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
 
-    .logo {
-      color: white;
-      font-size: 22px;
-      cursor: pointer;
-    }
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.85;
+}
 
-    .menu a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 14px;
-    }
+.navbar i {
+  font-size: 16px;
+}
 
-    .menu a:hover {
-      opacity: 0.7;
-    }
+/* ===== HERO SECTION ===== */
+.hero {
+  background: #f5f5f7;
+  text-align: center;
+  padding: 70px 20px 0;
+}
 
-    /* ===== HERO SECTION ===== */
-    .hero {
-      height: 85vh;
-      background: url("https://www.apple.com/v/iphone/home/ah/images/hero/iphone15pro/hero_static__e9j9dheieq6m_large.jpg")
-                  center / cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 0 20px;
-    }
+.hero h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
 
-    .hero h1 {
-      font-size: 56px;
-      font-weight: 600;
-    }
+.hero p {
+  font-size: 26px;
+  color: #555;
+  margin: 15px 0 25px;
+}
 
-    .hero p {
-      font-size: 22px;
-      margin: 12px 0;
-    }
+.hero-buttons {
+  margin-bottom: 40px;
+}
 
-    .hero a {
-      color: #2997ff;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 500;
-    }
+.btn-primary {
+  background: #0071e3;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 15px;
+}
 
-    .hero a:hover {
-      text-decoration: underline;
-    }
+.btn-outline {
+  color: #0071e3;
+  border: 2px solid #0071e3;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-    /* ===== PRODUCT GRID ===== */
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      background: #f5f5f7;
-    }
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
 
-    .product-card {
-      background: #ffffff;
-      padding: 30px;
-      text-align: center;
-      border-radius: 16px;
-    }
+.hero-image img {
+  width: 1000px;
+  max-width: 100%;
+}
 
-    .product-card h2 {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
+/* ===== AIRPODS SECTION ===== */
+.airpods {
+  background: #f5f5f7;
+  text-align: center;
+  padding: 100px 20px 80px;
+}
 
-    .product-card p {
-      font-size: 16px;
-      color: #555;
-    }
+.airpods h1 {
+  font-size: 56px;
+}
 
-    /* ===== FOOTER ===== */
-    footer {
-      background: #f5f5f7;
-      padding: 30px 20px;
-      text-align: center;
-      font-size: 14px;
-      color: #6e6e73;
-    }
-  </style>
+.airpods p {
+  font-size: 26px;
+  color: #555;
+  margin: 15px 0 28px;
+}
+
+.airpods-buttons {
+  margin-bottom: 60px;
+}
+
+.airpods-image {
+  display: flex;
+  justify-content: center;
+}
+
+.airpods-image img {
+  width: 900px;
+  max-width: 90vw;
+}
+
+/* ===== WATCH SECTION ===== */
+.watch {
+  background: #f5f5f7;
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.watch-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.watch-content h1 i {
+  margin-right: 6px;
+}
+
+.watch-content p {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.watch-buttons {
+  margin-bottom: 60px;
+}
+
+/* Watch Images + Video */
+.watch-images {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.watch-images img,
+.watch-images video {
+  width: 170px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav>
-      <div class="logo"></div>
-      <div class="menu">
-        <a href="#">Mac</a>
-        <a href="#">iPad</a>
-        <a href="#">iPhone</a>
-        <a href="#">Watch</a>
-        <a href="#">AirPods</a>
-        <a href="#">Support</a>
-      </div>
-    </nav>
-  </header>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <ul>
+    <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+    <li><a href="#">Store</a></li>
+    <li><a href="#">Mac</a></li>
+    <li><a href="#">iPad</a></li>
+    <li><a href="#">iPhone</a></li>
+    <li><a href="#">Watch</a></li>
+    <li><a href="#">Vision</a></li>
+    <li><a href="#">AirPods</a></li>
+    <li><a href="#">TV & Home</a></li>
+    <li><a href="#">Entertainment</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+  </ul>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>iPhone 15 Pro</h1>
-    <p>Titanium. So strong. So light.</p>
-    <a href="#">Learn more &gt;</a>
-  </section>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <h1>iPhone</h1>
+  <p>Say hello to the latest generation of iPhone.</p>
 
-  <!-- PRODUCTS -->
-  <section class="products">
-    <div class="product-card">
-      <h2>MacBook Pro</h2>
-      <p>Supercharged by M-series chips.</p>
+  <div class="hero-buttons">
+    <a href="#" class="btn-primary">Learn more</a>
+    <a href="#" class="btn-outline">Shop iPhone</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="ChatGPT Image Dec 29, 2025, 01_25_43 PM.jpg" alt="iPhone">
+  </div>
+</section>
+
+<!-- ===== AIRPODS ===== -->
+<section class="airpods">
+  <h1>AirPods Pro 3</h1>
+  <p>The world’s best in-ear Active Noise Cancellation.</p>
+
+  <div class="airpods-buttons">
+    <a href="#" class="btn-primary">Learn more</a>
+    <a href="#" class="btn-outline">Buy</a>
+  </div>
+
+  <div class="airpods-image">
+    <img src="ChatGPT Image Dec 29, 2025, 01_32_43 PM.jpg" alt="AirPods">
+  </div>
+</section>
+
+<!-- ===== WATCH ===== -->
+<section class="watch">
+  <div class="watch-content">
+    <h1><i class="fa-brands fa-apple"></i> WATCH <span>Series 11</span></h1>
+
+    <p>
+      Turn resolutions into routines.<br>
+      Quit quitting your fitness goals.
+    </p>
+
+    <div class="watch-buttons">
+      <a href="#" class="btn-primary">Learn more</a>
+      <a href="#" class="btn-outline">Buy</a>
     </div>
+  </div>
 
-    <div class="product-card">
-      <h2>iPad Pro</h2>
-      <p>Unbelievably thin. Incredibly powerful.</p>
-    </div>
+  <div class="watch-images">
+    <img src="ChatGPT Image Dec 29, 2025, 01_41_35 PM.jpg">
+    <img src="ChatGPT Image Dec 29, 2025, 01_54_55 PM.png">
 
-    <div class="product-card">
-      <h2>Apple Watch</h2>
-      <p>A healthy leap ahead.</p>
-    </div>
-  </section>
+    <!-- VIDEO -->
+    <video src="add-complications-to-your-apple-watch-apple-support-1080-publer.io.mp4"
+           autoplay muted loop playsinline></video>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Apple Clone • Educational Purpose Only
-  </footer>
+    <img src="watch4.png">
+    <img src="watch5.png">
+    <img src="watch6.png">
+    <img src="watch7.png">
+  </div>
+</section>
 
 </body>
 </html>
-
